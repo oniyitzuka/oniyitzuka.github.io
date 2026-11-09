@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f6f2">
+  <meta name="description" content="Oniyitzuka's personal corner of the internet. Notes on life, politics, philosophy, and whatever else won't leave my head.">
+  <title>Oniyitzuka — a little corner of the internet</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="posts.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="site-shell">
+    <aside class="sidebar">
+      <a class="wordmark" href="#" aria-label="Oniyitzuka, home">o<span>.</span></a>
+      <div class="identity"><h2>Oniyitzuka</h2><p>A person, figuring things out.</p></div>
+      <p class="bio">Into the internet, good books, long walks, and questions without tidy answers.</p>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#" data-view="journal" class="active"><span class="nav-symbol">↳</span> The journal <span class="nav-count">08</span></a>
+        <a href="#about" data-view="about"><span class="nav-symbol">○</span> A little about me</a>
+        <a href="#now" data-view="now"><span class="nav-symbol">⌁</span> What I’m up to</a>
+      </nav>
+      <div class="sidebar-bottom"><div class="status"><span></span> Somewhere in Pakistan</div><div class="sidebar-tools"><span>Made slowly. On purpose.</span><button id="theme-toggle" class="icon-button" aria-label="Switch to dark theme" title="Switch theme">☼</button></div></div>
+    </aside>
+    <div class="main-column">
+      <header class="topbar"><span>A LITTLE CORNER OF THE INTERNET</span><button id="search-open" class="search-button" aria-label="Search posts"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4.5 4.5"/></svg><span>Search</span><kbd>/</kbd></button></header>
+      <main id="main" tabindex="-1"></main>
+      <footer><span>© <span id="year"></span> Oniyitzuka</span><span>Still a work in progress. So am I.</span><a href="#" id="back-top">Back to top ↑</a></footer>
+    </div>
+  </div>
+  <dialog id="search-dialog"><form method="dialog" class="search-heading"><label for="search-input">Search the journal</label><button class="icon-button" aria-label="Close search">×</button></form><input id="search-input" type="search" placeholder="A word, a thought, a topic…" autocomplete="off"><div id="search-results" aria-live="polite"></div><p class="search-hint">ESC to close <span>Searches titles, topics, and writing.</span></p></dialog>
+</body>
+</html>
